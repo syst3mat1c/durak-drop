@@ -81,7 +81,7 @@ $(document).ready(function(){
         $('.faq-i:nth-child('+faq_id+') .faq-mess').slideToggle();
     });
 
-    for(let i = 1; i <= $('.faq-i').size(); i++){
+    for(let i = 1; i <= $('.faq-i').length; i++){
         $('.faq-i:nth-child('+i+') .faq-name').attr('data-faq-id', i);
     }
 
