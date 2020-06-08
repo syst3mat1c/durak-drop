@@ -1,0 +1,25 @@
+{
+    "name": "kvrvch-modules/users",
+    "description": "",
+    "authors": [
+        {
+            "name": "kvrvch",
+            "email": "yakarach@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Users\\Providers\\UsersServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Users\\": ""
+        }
+    }
+}

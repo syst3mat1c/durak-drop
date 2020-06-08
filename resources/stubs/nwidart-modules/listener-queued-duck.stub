@@ -1,0 +1,28 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
+
+class $CLASS$ implements ShouldQueue
+{
+    use InteractsWithQueue;
+
+    /**
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * @param  object  $event
+     * @return void
+     */
+    public function handle($event)
+    {
+        //
+    }
+}

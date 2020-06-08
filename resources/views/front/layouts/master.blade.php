@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ app(\App\Services\UI\HeaderService::class)->getTitle() }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="sockets-server" content="{{ config('services.sockets.server') }}">
+    <meta name="is-authorized" content="{{ (int) Auth::check() }}">
+    <meta name="keywords" content="Дурак дроп, Durak drop, Кейсы дурак, кейсы дурак онлайн, дурак онлайн, дурак" />
+    <meta name="description" content="Открывай кейсы Durak Online с пинкодами и выигрывай игровую валюту, только на Durak-drop">
+    <link rel="stylesheet" type="text/css" href="{{ asset('default/css/style1.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('default/css/media1.css') }}" />
+    <link rel="shortcut icon" href="{{ asset('default/images/favicon.ico') }}" />
+    <script type="text/javascript" src="{{ asset('default/js/jquery-1.9.1.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('default/js/jquery.arcticmodal-0.3.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    @stack('css')
+
+ 
+
+
+
+
+</head>
+<body>
+@include('front.layouts.modals')
+<div class="wrapper">
+    @widget('users.widgets.live_widget')
+    @widget('users.widgets.header_widget')
+
+    @yield('content')
+
+    @include('front.layouts.footer')
+
+    @stack('js')
+</div>
+</body>
+</html>

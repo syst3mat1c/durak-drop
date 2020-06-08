@@ -1,0 +1,25 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use Illuminate\Routing\Controller;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Http\Controllers\Traits\Responseable;
+
+class $CLASS$ extends Controller
+{
+    use AuthorizesRequests, Responseable;
+
+    public function __construct()
+    {
+
+    }
+
+    public function index() {}
+    public function show() {}
+    public function create() {}
+    public function store() {}
+    public function edit() {}
+    public function update() {}
+    public function destroy() {}
+}

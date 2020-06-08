@@ -1,0 +1,25 @@
+{
+    "name": "kvrvch-modules/admin",
+    "description": "",
+    "authors": [
+        {
+            "name": "kvrvch",
+            "email": "yakarach@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Admin\\Providers\\AdminServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Admin\\": ""
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Jenssegers\Mongodb\Eloquent\Model;
+
+class $CLASS$
+{
+    public function saved(Model $model) {}
+    public function saving(Model $model) {}
+
+    public function creating(Model $model) {}
+    public function created(Model $model) {}
+
+    public function updating(Model $model) {}
+    public function updated(Model $model) {}
+
+    public function deleting(Model $model) {}
+    public function deleted(Model $model) {}
+}
