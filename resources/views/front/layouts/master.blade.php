@@ -13,16 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('default/css/media1.css') }}" />
     <link rel="shortcut icon" href="{{ asset('default/images/favicon.ico') }}" />
-    <script type="text/javascript" src="{{ asset('default/js/jquery-1.9.1.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('default/js/jquery.arcticmodal-0.3.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     @stack('css')
-
- 
-
-
-
-
 </head>
 <body>
 @include('front.layouts.modals')
@@ -35,6 +26,10 @@
     @include('front.layouts.footer')
 
     @stack('js')
+    <script type="text/javascript" src="{{ mix('js/manifest.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('js/vendor.min.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('js/app.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('default/js/jquery.arcticmodal-0.3.min.js') }}"></script>
 </div>
 </body>
 </html>

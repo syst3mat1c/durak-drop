@@ -1,4 +1,9 @@
 const mix = require('laravel-mix');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
+
+require('laravel-mix-imagemin');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,9 +17,29 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    .extract(['lodash', 'popper.js', 'vue', 'noty', 'socket.io-client', 'jquery'])
+    .sass('resources/sass/app.scss', 'public/css')
+    .version();
 
-mix.minify('public/js/app.js');
+mix.minify('public/js/app.js')
+    .minify('public/js/vendor.js');
+
+mix.webpackConfig({
+    plugins: [
+        new CopyWebpackPlugin([{
+            from: 'resources/default/images',
+            to: 'default/images' // Laravel mix will place this in 'public/img'
+        }]),
+        new ImageminPlugin({
+            test: /\.(jpe?g|png|gif|svg)$/i,
+            plugins: [
+                imageminMozjpeg({
+                    quality: 80
+                })
+            ]
+        })
+    ]
+});
 
 module.exports = {
     mode: 'production'
