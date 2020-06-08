@@ -1,0 +1,244 @@
+@media only screen and (max-width: 1100px) {
+	html, body {
+		overflow-x:hidden;
+		font-size:13px;
+		min-width:320px;
+		background:#150727;
+	}
+
+	.wrapper {
+		min-width:320px;
+	}
+
+	.full {
+		width:auto;
+		margin:0;
+		position:static;
+	}
+
+	.table-scroll {
+		overflow-x:auto;
+		width:100%;
+	}
+
+	.table {
+		width:1140px !important;
+	}
+
+	.logo, .nav, .mini-profile-in {
+		position:static;
+	}
+
+	.mini-profile, .login, .online {
+		position:relative;
+	}
+
+	.login {
+		margin:0 auto;
+		top:0;
+		margin-top:10px;
+	}
+
+	.mini-profile {
+		width:auto;
+		height:auto;
+		text-align:center;
+		margin:10px 0 0 0;
+	}
+
+	.mini-profile-in {
+		width:100%;
+	}
+
+	.mini-profile-login, .mini-profile-link, .mini-profile-i {
+		float:none;
+	}
+
+	.mini-profile-login {
+		max-width:100% !important;
+		text-align:center;
+	}
+
+	.mini-profile-link {
+		margin:3px !important;
+	}
+
+	.mini-profile-ava {
+		display:inline-block;
+		position:relative;
+	}
+
+	.mini-profile-i {
+		float:none;
+		width:auto;
+		display:inline-block;
+		text-align:center !important;
+		left:0 !important;
+		margin:5px;
+	}
+
+	.header {
+		height:auto;
+		padding-bottom:5px;
+	}
+
+	.logo {
+		display:block;
+		margin:20px auto 10px auto;
+	}
+
+	.nav {
+		text-align:center;
+	}
+
+	.nav li {
+		float:none;
+		margin:5px;
+		display:inline-block;
+	}
+
+	.nav a {
+		display:inline-block;
+	}
+
+	.case-loop {
+		text-align:center;
+	}
+
+	.case-i {
+		float:none;
+		display:inline-block;
+		margin:5px !important;
+	}
+
+	.f-copy {
+		display:none;
+	}
+
+	.f-text {
+		padding:0 20px;
+		text-align:center;
+		float:none;
+	}
+
+	.faq-name:after {
+		display:none;
+	}
+
+	.faq-name {
+		padding:10px 20px;
+		height:auto;
+		line-height:normal;
+	}
+
+	.modal {
+		width:auto !important;
+	}
+
+	.topuser-3 {
+		height:auto;
+		text-align:center;
+		padding-bottom:30px;
+	}
+
+	.topuser-i {
+		position:static;
+		display:inline-block;
+		margin:5px !important;
+	}
+
+	.topuser-num {
+		position:static;
+		display:block;
+		margin:0 auto;
+	}
+
+	.rulet ul {
+		left:calc(50% - 676px);
+	}
+
+	.rulet-list-titile {
+		display:block;
+		text-align:center;
+		line-height:normal;
+	}
+
+	.rulet-center {
+		padding:25px 0;
+	}
+
+	.rulet-list {
+		padding:10px;
+	}
+
+	.rulet-btn {
+		display:block;
+		margin:0 auto;
+	}
+
+	.viewn-loop {
+		text-align:center;
+	}
+
+	.viewn {
+		display:inline-block;
+		float:none;
+		margin:5px !important;
+	}
+
+	.viewn-loop.my .viewn {
+		margin-bottom:55px !important;
+	}
+
+	.content {
+		padding:20px !important;
+	}
+
+	.profile-nav li {
+		margin:0 10px 10px 0px;
+		padding:0 10px;
+	}
+
+	.profile-ava {
+		float:none;
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+
+	.profile-right {
+		float:none;
+		width:auto;
+	}
+
+	.stats {
+		position:static;
+		text-align:center;
+		padding:20px 0;
+	}
+
+	.stats li {
+		float:none;
+		display:inline-block;
+	}
+
+	.ref-input	{
+		float:none;
+		width:100%;
+		margin-bottom:20px;
+	}
+
+	.ref-button {
+		float:none;
+		width:100%;
+		margin:0;
+	}
+
+	.ref-list {
+		padding:20px 0 0 0;
+	}
+
+	.ref-list li {
+		display:inline-block;
+		float:none;
+	}
+}
